@@ -1,0 +1,33 @@
+# Till now, we studied about Basic Data Type: Integer, Bool, Address    --> Trick: bai
+
+# Now we will study Reference Data Type & Data Locations
+  These include:
+                strings, arrays, mappings, struct   --> Trick: mass
+- Such data types are known as reference data types.
+- If we use a reference type, we always have to explicitly provide the data area where the type is stored.
+- Every reference type has an additional annotation, the "data location", about where it is stored.
+  There are three data locations:
+                                  memory, storage, calldata
+ 
+# Why data location needed?
+  Because these types store multiple values inside them, 
+  so Solidity needs to know:
+                            - where to store them
+                            - how long they should exist
+
+# Data Locations Explained (memory, storage, calldata)
+memory
+- Temporary
+- Lives only during a function call
+- For example: function uses a temporary array
+
+storage
+- Permanent
+- Stores state variables
+- Lives for the entire contract lifetime
+
+calldata
+- Temporary but read-only
+- Special data location used for function arguments
+- Cannot be modified
+- Cheaper in gas

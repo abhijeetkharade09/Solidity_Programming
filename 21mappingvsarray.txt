@@ -1,0 +1,17 @@
+# Question: Are arrays and mapping the same thing, so answer to this question is NO. 
+            Syntax wise for insert and get data it might look same but mappings are very very very much dfferent from arrays.
+            And Mapping are always better than Array
+
+Array:
+- Ordered collection
+- Array stores data in contiguous fashion i.e stores elements in a sequence.
+- Each element has an index (0,1,2...)
+- Index must exist, otherwise error.
+- Arrays are iterable, you can run loop on array
+
+Mapping:
+- Key–value data structure
+- While, mapping stores data in non-contiguous fashion i.e No order
+- Accessed using keys instead of indexes
+- If a key does NOT exist → returns default value
+- Mapping are not iterable, you cannot run loop on mapping
